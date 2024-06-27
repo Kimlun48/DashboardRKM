@@ -14,9 +14,18 @@ function DashboardStoreIndex() {
     const [currentTime, setCurrentTime] = useState('');
 
     const fetchData = async () => {
+        // try {
+        //     const response = await Api.get('api/dashboardstore');
+        //     setDashboardStore(response.data.data);
+        // } catch (error) {
+        //     console.error('Error fetching data:', error);
+        // }
         try {
             const response = await Api.get('api/dashboardstore');
-            setDashboardStore(response.data.data);
+            const sortedData = response.data.data.sort((a, b) => {
+                return b["PESANAN_SUDAH_BISA_DIAMBIL"].localeCompare(a["PESANAN_SUDAH_BISA_DIAMBIL"]);
+            });
+            setDashboardStore(sortedData);
         } catch (error) {
             console.error('Error fetching data:', error);
         }
