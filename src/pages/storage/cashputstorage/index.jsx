@@ -55,7 +55,7 @@ export default function CpsIndex() {
     }, [search, cashputstorage, formatDate]);
 
     const columns = [
-        { name: 'No Document', selector: row => row.NO_DOCUMENT, sortable: true,width:'130px' },
+        { name: 'No Document', selector: row => row.NO_DOCUMENT, sortable: true,width:'150px' },
         { name: 'Type', selector: row => row.TYPE, sortable: true ,width:'200px'},
         { name: 'Item', selector: row => row.ITEM, sortable: true  , width:'150px'},
         { name: 'Description', selector: row => row.DESCRIPTION, sortable: true,width:'450px' },
