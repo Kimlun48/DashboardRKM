@@ -167,101 +167,7 @@ html, body {
   font-weight: bold;
 }
 
-/* Responsive styles */
 
-@media  (min-width: 320px) and (max-width: 767px) {
-  .title {
-      font-size: 18px;
-  }
-
-  .custom-background {
-      padding: 10px;
-  }
-
-  .datetime-container {
-      flex-direction: column;
-      align-items: right;
-  }
-
-  .time-container {
-      flex-direction: column;
-      align-items: right;
-  }
-
-  .current-time {
-      margin-bottom: 5px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px)  {
-  .title {
-      font-size: 20px;
-  }
-
-  .custom-background {
-      padding: 10px;
-  }
-
-  .datetime-container {
-      flex-direction: column;
-      align-items: right;
-  }
-
-  .time-container {
-      flex-direction: column;
-      align-items: right;
-  }
-
-  .current-time {
-      margin-bottom: 5px;
-  }
-}
-
-/* Styles for very large screens (like a 52-inch TV) */
-@media (min-width: 1920px) {
-  .title {
-      font-size: 48px;
-  }
-
-  .current-time {
-      font-size: 32px;
-  }
-
-  .container {
-      padding: 50px;
-  }
-
-  .datetime-container {
-      font-size: 32px;
-  }
-
-  .time-container {
-      font-size: 32px;
-  }
-
-  .card-body {
-      font-size: 24px;
-  }
-
-  .alert-primary {
-      font-size: 24px;
-  }
-}
-
-
-
-
-
-
-
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
-}
 
 .fade-in {
   animation: fadeIn 0.5s ease-in-out;
@@ -316,9 +222,9 @@ html, body {
 }
 
 
-.d-flex {
+/* .d-flex {
   background-color: rgb(246, 249, 255);
-}
+} */
 
 
 /* src/styles/customStyles.css (adjust the path according to your project structure) */
@@ -367,11 +273,12 @@ body {
   /* background: var(--body-color) !important; */
   /* background-image: url("../images/3040791.jpg"); */
   /* background: radial-gradient(circle, rgb(252, 249, 250) 30%, rgb(144, 187, 242) 100%)!important; */
-  background: rgb(246, 249, 255) !important;
+  /* background: rgb(221, 55, 9) !important; */
   /* background: #717171; */
   margin: 0;
   padding: 0;
   font-weight:600;
+  background-color: rgb(246, 249, 255);
 }
 
 .bg-light {
@@ -487,6 +394,130 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   transform: scale(
     1.2
   ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
+
+* Ensure the navbar stays fixed at the top */
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; /* Ensure it stays on top of other elements */
+}
+
+/* Adjust the padding of the content to prevent overlap with the navbar */
+.content-wrapper {
+  padding-top: 70px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Optional: Ensure the full body container takes up the full viewport height */
+.full-body-container {
+  min-height: 100vh;
+}
+
+/* Optional: Add custom styles for the navbar background */
+.bg-light-up {
+  background-color: #bfd2e4 !important;
+  color: white !important;
+}
+
+
+/* Responsive styles */
+
+@media  (min-width: 320px) and (max-width: 767px) {
+  .title {
+      font-size: 18px;
+  }
+
+  .custom-background {
+      padding: 10px;
+  }
+
+  .datetime-container {
+      flex-direction: column;
+      align-items: right;
+  }
+
+  .time-container {
+      flex-direction: column;
+      align-items: right;
+  }
+
+  .current-time {
+      margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+  .title {
+      font-size: 20px;
+  }
+
+  .custom-background {
+      padding: 10px;
+  }
+
+  .datetime-container {
+      flex-direction: column;
+      align-items: right;
+  }
+
+  .time-container {
+      flex-direction: column;
+      align-items: right;
+  }
+
+  .current-time {
+      margin-bottom: 5px;
+  }
+}
+
+/* Styles for very large screens (like a 52-inch TV) */
+@media (min-width: 1920px) {
+  .title {
+      font-size: 48px;
+  }
+
+  .current-time {
+      font-size: 32px;
+  }
+
+  .container {
+      padding: 50px;
+  }
+
+  .datetime-container {
+      font-size: 32px;
+  }
+
+  .time-container {
+      font-size: 32px;
+  }
+
+  .card-body {
+      font-size: 24px;
+  }
+
+  .alert-primary {
+      font-size: 24px;
+  }
+}
+
+
+
+
+
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
 }
 
 @media (min-width: 768px) {

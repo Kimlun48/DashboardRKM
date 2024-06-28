@@ -65,7 +65,7 @@ export default function CpsIndex() {
         { name: 'No Struk', selector: row => row.NO_STRUK, sortable: true ,width:'200px'},
         { name: 'Status', selector: row => row.STATUS, sortable: true,width:'200px' },
         { name: 'Date', selector: row => row.START_DATE ? formatDate(row.START_DATE) : 'No Data', sortable: true, width:'150px' },
-        { name: 'Late', selector: row => row.late, sortable: true,width:'80px' }
+        { name: 'Late', selector: row => row.late, sortable: true,width:'100px' }
     ];
 
     const customStyles = {
