@@ -2,17 +2,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
-import FooterDc from '../components/footer';
 
 export default function AdminLayout({ children }) {
   return (
     <React.Fragment>
-      <div className="d-flex sb-sidenav-toggled" id="wrapper">
+      <div className="d-flex" id="wrapper">
         <div id="page-content-wrapper">
-          <Navbar expand="lg" bg="light" className="bg-light-up">
+          <Navbar expand="lg" bg="light" className="bg-light-up fixed-top">
             <Container fluid>
-              {/* <Navbar.Brand href="#" className="fw-bold">ADMIN PANEL</Navbar.Brand> */}
-              <Navbar.Toggle aria-controls="navbarSupportedContent" />
+                {/* <Navbar.Brand href="#" className="fw-bold">ADMIN PANEL</Navbar.Brand> */}
+                <Navbar.Toggle aria-controls="navbarSupportedContent" />
               <Navbar.Collapse id="navbarSupportedContent">
                 <Nav className="me-auto mb-2 mb-lg-0">
                   <Nav.Link as={Link} to="/" className="fw-bold">HOME</Nav.Link>
@@ -48,13 +47,11 @@ export default function AdminLayout({ children }) {
               </Navbar.Collapse>
             </Container>
           </Navbar>
-          <div className="container-fluid">
+          <div className="container-fluid content-wrapper">
             {children}
           </div>
         </div>
       </div>
-      
     </React.Fragment>
   );
-  //
 }
