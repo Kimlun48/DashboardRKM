@@ -399,7 +399,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 
 
-* Ensure the navbar stays fixed at the top */
+/* Ensure the navbar stays fixed at the top */
 .fixed-top {
   position: fixed;
   top: 0;
