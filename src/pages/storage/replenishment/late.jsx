@@ -119,7 +119,7 @@ function ReplenishmentLate() {
                         <div className="col-md-12">
                             <div className="card border-0 rounded shadow-sm border-top-success">
                                 <div className="card-header">
-                                    <span className='font-weight-bold'><i className='fa fa-folder'></i> PUTAWAY LATE</span>
+                                    <span className='font-weight-bold'><i className='fa fa-folder'></i> REPLENISHMENT LATE</span>
                                 </div>
                                 <div className="card-body">
                                     <input
