@@ -127,7 +127,7 @@ return (
                                     customStyles={customStyles}
                                     noDataComponent={
                                         <div className="alert alert-danger mb-0">
-                                            Data Belum Tersedia!
+                                            data sudah selesai diproses
                                         </div>
                                     }
                                 />
